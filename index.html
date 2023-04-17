@@ -5,9 +5,87 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+    <link rel="stylesheet" href="dist/output.css">
   </head>
-  <body>
+  <body class="text-gray-600">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <div>
+      <div>
+        <nav>
+          <div>
+            <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+              <a href="/">Food Ninja</a>
+            </h1>
+          </div>
+          <ul>
+            <li class="text-gray-700 font-bold">
+              <a href="#">
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    
+      <main class="px-16 py-6">
+        <div>
+          <a href="#" class="text-primary">Log in</a>
+          <a href="#" class="text-primary">Sign up</a>
+        </div>
+  
+        <header>
+          <h2 class="text-gray-600 text-5xl font-semibold">Recipes</h2>
+          <h3 class="text-3xl font-semibold">Dla Januszy</h3>
+        </header>
+  
+        <div>
+          <h4 class="font-bold pb-2 mt-12 border-b border-gray-200">najnowsze</h4>
+    
+          <div>
+            
+            <div class="mt-8"> 
+              <img src="src/img/pizza.jpg" alt="pizza" width="150" height="200">
+              <div>
+                <span>pizza</span>
+                <span>przepis wojtka</span>
+              </div>
+              <div> 
+                <img src="src/img/groch.jpg" alt="groch" width="150" height="200">
+                <div>
+                  <span>groszek</span>
+                  <span>przepis wojtka</span>
+                </div>
+                <div> 
+                  <img src="src/img/schab.jpg" alt="schab" width="150" height="200">
+                  <div>
+                    <span>schabik</span>
+                    <span>przepis wojtka</span>
+                  </div>
+            </div>
+          </div>
+  
+          <h4 class="font-bold pb-2 mt-12 border-b border-gray-200">Najlepsze</h4>
+  
+          <div class="mt-8">
+            
+          </div>
+        </div>
+  
+        <div class="mt-12">
+          <div>Wiele więcej</div>
+        </div>    
+      </main>
+    </div>
   </body>
 </html>
