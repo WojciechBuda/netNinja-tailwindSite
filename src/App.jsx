@@ -6,7 +6,7 @@ function App() {
           <nav>
             <div>
               <h1 className="font-bold uppercase p-4 border-b border-gray-100">
-                <a href="/">Food Ninja</a>
+                <a href="/">Food Ninjadd</a>
               </h1>
             </div>
             <ul>
