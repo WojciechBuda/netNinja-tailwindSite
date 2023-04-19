@@ -1,28 +1,28 @@
 function App() {
   return (
-    <div className="App text-gray-600">
+    <div className="App text-gray-600 text-center">
       <div>
         <div>
           <nav>
             <div>
-              <h1 className="font-bold uppercase p-4 border-b border-gray-100">
+              <h1 className="font-bold uppercase p-4 border-b border-gray-100 animate-bounce">
                 <a href="/">xxxxxxxxxxxxxx</a>
               </h1>
             </div>
             <ul>
-              <li className="text-gray-700 font-bold">
+              <li className="text-gray-700 font-bold animate-pulse flex space-x-4">
                 <a href="#">
-                  <span>Home</span>
+                  <span>chaupa</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <span>About</span>
+                  <span>co to</span>
                 </a>
               </li>
-              <li>
+              <li className="text-">
                 <a href="#">
-                  <span>Contact</span>
+                  <span>kontakt</span>
                 </a>
               </li>
             </ul>
@@ -40,8 +40,8 @@ function App() {
         </div>
 
         <header>
-          <h2 className="text-gray-600 text-5xl font-semibold">Recipes</h2>
-          <h3 className="text-3xl font-semibold">Dla Januszy</h3>
+          <h2 className="text-gray-600 text-5xl font-semibold animate-bounce">Recipes</h2>
+          <h3 className="text-3xl font-semibold ring-2 ring-red-300 ring-offset-4 ring-offset-slate-50">Dla Januszy</h3>
         </header>
 
         <div>
@@ -50,7 +50,7 @@ function App() {
           </h4>
 
           <div>
-            <div className="mt-8">
+            <div className="mt-8 blur-sm">
               <img
                 src="src/img/pizza.jpg"
                 alt="pizza"
@@ -63,7 +63,7 @@ function App() {
               </div>
             </div>
 
-            <div className="mt-8">
+            <div className="mt-8 blur-sm">
               <img
                 src="src/img/groch.jpg"
                 alt="groch"
@@ -76,7 +76,7 @@ function App() {
               </div>
             </div>
 
-            <div className="mt-8">
+            <div className="mt-8 blur-sm">
               <img
                 src="src/img/schab.jpg"
                 alt="schab"
