@@ -1,16 +1,16 @@
 function App() {
   return (
-    <div className="App text-gray-600 text-center">
-      <div>
+    <div className="App text-gray-600">
+      <div className=" bg-zinc-200">
         <div>
           <nav>
             <div>
-              <h1 className="font-bold uppercase p-4 border-b border-gray-100 animate-bounce">
-                <a href="/">xxxxxxxxxxxxxx</a>
+              <h1 className="font-bold uppercase p-4 border-b border-gray-100">
+                <a href="/">Jedzenie</a>
               </h1>
             </div>
             <ul>
-              <li className="text-gray-700 font-bold animate-pulse flex space-x-4">
+              <li className="text-gray-700 font-bold flex space-x-4">
                 <a href="#">
                   <span>chaupa</span>
                 </a>
@@ -29,63 +29,66 @@ function App() {
           </nav>
         </div>
       </div>
-      <main className="px-16 py-6">
-        <div>
+      <main className="px-16 py-6  bg-gray-100">
+        <div className="flex sm:justify-center md:justify-end">
           <a href="#" className="text-primary">
             Log in
-          </a>
-          <a href="#" className="text-primary">
+            </a>
+          <a href="#" className="text-primary ml-2">
             Sign up
           </a>
         </div>
 
         <header>
-          <h2 className="text-gray-600 text-5xl font-semibold animate-bounce">Recipes</h2>
-          <h3 className="text-3xl font-semibold ring-2 ring-red-300 ring-offset-4 ring-offset-slate-50">Dla Januszy</h3>
+          <h2 className="text-gray-600 text-5xl font-semibold animate-bounce flex justify-center">Przepisy</h2>
+          <h3 className="text-3xl font-semibold animate-bounce flex justify-center"> Domowe </h3>
         </header>
 
         <div>
-          <h4 className="font-bold pb-2 mt-12 border-b border-gray-200">
-            najnowsze
+          <h4 className="font-bold pb-2 mt-12 border-b border-gray-200 text-3xl">
+            Najnowsze
           </h4>
 
-          <div>
-            <div className="mt-8 blur-sm">
-              <img
+          <div className="mt-8">
+            <div className=" bg-white  rounded-lg overflow-hidden shadow-md relative">
+              <img className=" w-full  h-32 sm:h-48 object-cover "
                 src="src/img/pizza.jpg"
                 alt="pizza"
-                width="150"
-                height="200"
               />
-              <div>
-                <span>pizza</span>
-                <span>przepis wojtka</span>
+              <div className="m-4">
+                <span className=" font-bold ">Pizza</span>
+                <span className=" block text-gray-500 text-sm">Przepis wojtka</span>
+              </div>
+              <div className=" bg-lime-600  text-yellow-500 text-xs  uppercase font-bold  rounded-full p-2 absolute top-0 ml-2 mt-2">
+                <span>90 min</span>
               </div>
             </div>
 
-            <div className="mt-8 blur-sm">
-              <img
-                src="src/img/groch.jpg"
-                alt="groch"
-                width="150"
-                height="200"
+            <div className=" bg-white  rounded-lg overflow-hidden shadow-md relative">
+              <img className=" w-full  h-32 sm:h-48 object-cover "
+                src="src/img/rosol.jpg"
+                alt="rosół"
               />
               <div>
-                <span>groszek</span>
-                <span>przepis wojtka</span>
+                <span className=" font-bold">Rosół</span>
+                <span className=" block text-gray-500 text-sm">Przepis wojtka</span>
+              </div>
+              <div className=" bg-lime-600  text-yellow-500 text-xs  uppercase font-bold  rounded-full p-2 absolute top-0 ml-2 mt-2">
+                <span>60 min</span>
               </div>
             </div>
 
-            <div className="mt-8 blur-sm">
-              <img
+            <div className=" bg-white  rounded-lg overflow-hidden shadow-md relative">
+              <img className=" w-full  h-32 sm:h-48 object-cover "
                 src="src/img/schab.jpg"
                 alt="schab"
-                width="150"
-                height="200"
               />
               <div>
-                <span>schabik</span>
-                <span>przepis wojtka</span>
+                <span className="font-bold">Schabik</span>
+                <span className=" block text-gray-500 text-sm">Przepis wojtka</span>
+              </div>
+              <div className=" bg-lime-600  text-yellow-500 text-xs  uppercase font-bold  rounded-full p-2 absolute top-0 ml-2 mt-2">
+                <span>75 min</span>
               </div>
             </div>
           </div>
@@ -99,8 +102,8 @@ function App() {
           </div>
         </div>
 
-        <div className="mt-12">
-          <div>Wiele więcej</div>
+        <div className="mt-12 flex justify-center">
+          <div className=" bg-transparent">Wiele więcej</div>
         </div>
       </main>
     </div>
