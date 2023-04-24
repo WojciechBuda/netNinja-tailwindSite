@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card {
+  @apply bg-white rounded-lg overflow-hidden shadow-md relative
+}
+
+.klips {
+  @apply bg-transparent backdrop-contrast-50  border border-teal-50 text-gray-100 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2
+}
+
+.guzik {
+  @apply rounded-full py-3 px-2 uppercase text-xs font-bold cursor-pointer tracking-wider
+}

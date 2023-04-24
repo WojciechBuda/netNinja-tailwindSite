@@ -8,9 +8,11 @@ export default {
     extend: {
       colors: {
         primary: '#FF6363'
-      }
+      },
+      backgroundImage: {
+        tlo: "url('/img/tlo.jpg')"
     },
   },
   plugins: [],
 }
-
+}
