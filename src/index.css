@@ -10,6 +10,6 @@
   @apply bg-transparent backdrop-contrast-50  border border-teal-50 text-gray-100 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2
 }
 
-.btn {
+.button {
   @apply rounded-full py-3 px-2 uppercase text-xs font-bold cursor-pointer tracking-wider
 }
