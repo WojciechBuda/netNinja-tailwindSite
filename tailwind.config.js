@@ -10,7 +10,7 @@ export default {
         primary: '#FF6363'
       },
       backgroundImage: {
-        tlo: "url('/img/tlo.jpg')"
+        background: "url('/img/tlo.jpg')"
     },
   },
   plugins: [],
