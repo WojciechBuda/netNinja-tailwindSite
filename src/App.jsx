@@ -1,17 +1,17 @@
 function App() {
   return (
-    <div className= " text-gray-600 grid md:grid-cols-3 ">
+    <div className= "text-gray-600 grid md:grid-cols-3 ">
       <div>
         <div className="md:col-span-1 md:flex md:justify-end">
           <nav className="text-right">
             <div>
               <h1 className="font-bold uppercase p-4 border-b border-gray-100">
-                <a href="/" className=" hover:text-gray-700">Gotuj z nami Januszami</a>
+                <a href="/" className="hover:text-gray-700">Gotuj z nami Januszami</a>
               </h1>
             </div>
             <ul className=" text-sm mt-3">
               <li className="text-gray-700 font-bold py-1">
-                <a href="#" className=" px-4  flex  justify-end">
+                <a href="#" className=" px-4 flex justify-end">
                   <span>Strona główna</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ function App() {
                 </a>
               </li>
               <li className="py-1">
-                <a href="#" className="px-4  flex  justify-end">
+                <a href="#" className="px-4 flex justify-end">
                   <span>Coś o nas</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ function App() {
                 </a>
               </li>
               <li className="py-1">
-                <a href="#" className="px-4  flex  justify-end">
+                <a href="#" className="px-4 flex justify-end">
                   <span>Kontakt</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -66,38 +66,33 @@ function App() {
           </nav>
         </div>
       </div>
-      <main className="px-16 py-6  bg-gray-100  md: col-span-2">
+      <main className="px-16 py-6 bg-gray-100 md: col-span-2">
         <div className="flex sm:justify-center md:justify-end">
-          <a href="#" className="text-primary guzik border-primary md:border-2 hover:bg-primary hover:text-slate-50">
+          <a href="#" className="text-primary btn border-primary md:border-2 hover:bg-primary hover:text-slate-50">
             Log in
           </a>
           <a
             href="#"
-            className="text-primary ml-2 guzik border-primary md:border-2  hover:bg-primary hover:text-slate-50"
+            className="text-primary ml-2 btn border-primary md:border-2 hover:bg-primary hover:text-slate-50"
           >
             Sign up
           </a>
         </div>
-
         <header>
           <h2 className="text-gray-600 text-5xl font-semibold animate-bounce flex justify-center">
             Przepisy
           </h2>
           <h3 className="text-3xl font-semibold animate-bounce flex justify-center">
-            {" "}
-            Domowe{" "}
           </h3>
         </header>
-
         <div>
           <h4 className="font-bold pb-2 mt-12 border-b border-gray-200 text-3xl">
             Najnowsze
           </h4>
-
-          <div className="mt-8 grid lg:grid-cols-3  gap-10">
-            <div className="card  hover:shadow-2xl">
+          <div className="mt-8 grid lg:grid-cols-3 gap-10">
+            <div className="card hover:shadow-2xl">
               <img
-                className=" w-full  h-32 sm:h-48 object-cover "
+                className="w-full h-32 sm:h-48 object-cover "
                 src="src/img/pizza.jpg"
                 alt="pizza"
               />
@@ -107,7 +102,7 @@ function App() {
                   Przepis wojtka
                 </span>
               </div>
-              <div className="klips">
+              <div className="badge">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -122,13 +117,12 @@ function App() {
                     d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-
                 <span>90 min</span>
               </div>
             </div>
             <div className="card hover:shadow-2xl">
               <img
-                className=" w-full  h-32 sm:h-48 object-cover "
+                className="w-full h-32 sm:h-48 object-cover "
                 src="src/img/rosol.jpg"
                 alt="rosół"
               />
@@ -138,7 +132,7 @@ function App() {
                   Przepis wojtka
                 </span>
               </div>
-              <div className="klips">
+              <div className="badge">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -156,10 +150,9 @@ function App() {
                 <span>60 min</span>
               </div>
             </div>
-
             <div className="card hover:shadow-2xl">
               <img
-                className=" w-full  h-32 sm:h-48 object-cover "
+                className="w-full h-32 sm:h-48 object-cover "
                 src="src/img/schab.jpg"
                 alt="schab"
               />
@@ -169,7 +162,7 @@ function App() {
                   Przepis wojtka
                 </span>
               </div>
-              <div className="klips">
+              <div className="badge">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -188,24 +181,20 @@ function App() {
               </div>
             </div>
           </div>
-
           <h4 className="font-bold pb-2 mt-12 border-b border-gray-200">
             Najlepsze
           </h4>
-
           <div className="mt-8">
             <div>Coming soon...</div>
           </div>
         </div>
-
         <div className="mt-12 flex justify-center">
-          <div className="bg-transparent guzik border-neutral-500 border-2 bg-slate-200  hover:shadow-inner ">
+          <div className="bg-transparent btn border-neutral-500 border-2 bg-slate-200 hover:shadow-inner ">
             Wiele więcej
           </div>
         </div>
       </main>
     </div>
-
   );
 }
 
