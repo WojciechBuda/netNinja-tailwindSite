@@ -1,17 +1,39 @@
+import "./store.js";
 function App() {
   return (
-    <div className= " text-gray-600 grid md:grid-cols-3 ">
+    <div className=" text-gray-600 grid md:grid-cols-3 ">
       <div>
         <div className="md:col-span-1 md:flex md:justify-end">
           <nav className="text-right">
-            <div>
+            <div className="flex justify-between items-center">
               <h1 className="font-bold uppercase p-4 border-b border-gray-100">
-                <a href="/" className=" hover:text-gray-700">Gotuj z nami Januszami</a>
+                <a href="/" className=" hover:text-gray-700">
+                  Gotuj z nami Januszami
+                </a>
               </h1>
+              <div className="px-4 cursor-pointer md:hidden" id="dupa">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </div>
             </div>
-            <ul className=" text-sm mt-3">
+            <ul className=" text-sm mt-3 hidden md:block " id="menu">
               <li className="text-gray-700 font-bold py-1">
-                <a href="#" className=" px-4  flex  justify-end">
+                <a
+                  href="#"
+                  className=" px-4  flex  justify-end border-r-4 border-primary"
+                >
                   <span>Strona główna</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +47,10 @@ function App() {
                 </a>
               </li>
               <li className="py-1">
-                <a href="#" className="px-4  flex  justify-end">
+                <a
+                  href="#"
+                  className="px-4  flex  justify-end border-r-4 border-white"
+                >
                   <span>Coś o nas</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +69,10 @@ function App() {
                 </a>
               </li>
               <li className="py-1">
-                <a href="#" className="px-4  flex  justify-end">
+                <a
+                  href="#"
+                  className="px-4  flex  justify-end border-r-4 border-white"
+                >
                   <span>Kontakt</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -68,12 +96,15 @@ function App() {
       </div>
       <main className="px-16 py-6  bg-gray-100  md: col-span-2">
         <div className="flex sm:justify-center md:justify-end">
-          <a href="#" className="text-primary guzik border-primary md:border-2 hover:bg-primary hover:text-slate-50">
+          <a
+            href="#"
+            className="text-primary guzik border-primary md:border-2 hover:bg-primary hover:text-slate-50 transition ease-out duration-500"
+          >
             Log in
           </a>
           <a
             href="#"
-            className="text-primary ml-2 guzik border-primary md:border-2  hover:bg-primary hover:text-slate-50"
+            className="text-primary ml-2 guzik border-primary md:border-2  hover:bg-primary hover:text-slate-50 transition ease-out duration-500"
           >
             Sign up
           </a>
@@ -199,13 +230,12 @@ function App() {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <div className="bg-transparent guzik border-neutral-500 border-2 bg-slate-200  hover:shadow-inner ">
+          <div className="bg-transparent guzik border-neutral-500 border-2 bg-slate-300  hover:shadow-inner transfrom hover:scale-125 hover:bg-opacity-50 transition ease-out duration-500">
             Wiele więcej
           </div>
         </div>
       </main>
     </div>
-
   );
 }
 
