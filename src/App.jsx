@@ -2,16 +2,16 @@ import { useState } from "react";
 function App() {
   const [menuHidden, setMenuHidden] = useState(true);
   return (
-    <div className="bg-no-repeat bg-cover bg-[url('./img/tlo.jpg')]">
+    <div className="bg-no-repeat bg-cover bg-[url('./img/background.jpg')]">
       <div className="bg-slate-300 bg-opacity-20">
       
-        <div className="text-gray-600 grid md:grid-cols-3">
+        <div className="text-slate-800 grid md:grid-cols-3">
           <div>
-            <div className="md:col-span-1 md:flex md:justify-end">
-              <nav className="text-right">
+            <div className="md:col-span-1 md:flex md:justify-start">
+              <nav className="text-left">
                 <div className="flex justify-between items-center">
                   <h1 className="font-bold uppercase p-4 border-b border-gray-100">
-                    <a href="/" className="hover:text-gray-700">
+                    <a href="/" className=" text-red-800">
                       Gotuj z nami Januszami
                     </a>
                   </h1>
@@ -40,10 +40,10 @@ function App() {
                     menuHidden ? "hidden" : ""
                   } md:block`}
                 >
-                  <li className="text-gray-700 font-bold py-1">
+                  <li className="text-slate-700 font-bold py-1">
                     <a
                       href="#"
-                      className="px-4 flex justify-end border-r-4 border-primary"
+                      className="px-4 flex justify-start border-l-4 border-lime-700"
                     >
                       <span>Strona główna</span>
                       <svg
@@ -60,7 +60,7 @@ function App() {
                   <li className="py-1">
                     <a
                       href="#"
-                      className="px-4 flex justify-end border-r-4 border-white"
+                      className="px-4 flex justify-start border-l-4 border-lime-600"
                     >
                       <span>Coś o nas</span>
                       <svg
@@ -82,7 +82,7 @@ function App() {
                   <li className="py-1">
                     <a
                       href="#"
-                      className="px-4 flex justify-end border-r-4 border-white"
+                      className="px-4 flex justify-start border-l-4 border-lime-600"
                     >
                       <span>Kontakt</span>
                       <svg
@@ -105,17 +105,17 @@ function App() {
               </nav>
             </div>
           </div>
-          <main className="px-16 py-6 md: col-span-2 bg-slate-200 bg-opacity-70">
+          <main className="px-16 py-6 md: col-span-2 bg-slate-200 bg-opacity-60">
             <div className="flex sm:justify-center md:justify-end">
               <a
                 href="#"
-                className="text-primary button border-primary md:border-2 hover:bg-primary hover:text-slate-50 transition ease-out duration-500"
+                className="text-slate-700 button border-slate-700 md:border-2 hover:bg-primary hover:text-slate-50 transition ease-out duration-500 bg-gradient-to-r from-slate-100 to-slate-500 hover:from-pink-500 hover:to-yellow-500"
               >
                 Log in
               </a>
               <a
                 href="#"
-                className="text-primary ml-2 button border-primary md:border-2 hover:bg-primary hover:text-slate-50 transition ease-out duration-500"
+                className="text-slate-700 ml-2 button border-slate-700 md:border-2 hover:bg-primary hover:text-slate-50 transition ease-out duration-500 bg-gradient-to-r from-slate-100 to-slate-500 hover:from-pink-500 hover:to-yellow-500"
               >
                 Sign up
               </a>
@@ -235,7 +235,7 @@ function App() {
             </div>
 
             <div className="mt-12 flex justify-center">
-              <div className="bg-transparent button border-neutral-500 border-2 bg-slate-300 hover:shadow-inner transfrom hover:scale-125 hover:bg-opacity-50 transition ease-out duration-500">
+              <div className="text-slate-600 bg-transparent button border-slate-700 border-2 hover:shadow-inner  transfrom hover:scale-125 hover:bg-opacity-50 hover:text-slate-50 transition ease-out duration-500 bg-gradient-to-r from-slate-300 to-slate-500 hover:from-pink-500 hover:to-yellow-500">
                 Wiele więcej
               </div>
             </div>
