@@ -1,14 +1,18 @@
 import { useState } from "react";
+import rosol from "./img/rosol.jpg";
+import pizza from "./img/pizza.jpg";
+import schab from "./img/schab.jpg";
+
 function App() {
   const [menuHidden, setMenuHidden] = useState(true);
   return (
     <div className="bg-no-repeat bg-cover bg-[url('./img/background.jpg')]">
-      <div className="bg-slate-300 bg-opacity-20">
+      <div className="bg-slate-300 bg-opacity-10">
       
         <div className="text-slate-800 grid md:grid-cols-3">
           <div>
-            <div className="md:col-span-1 md:flex md:justify-start">
-              <nav className="text-left">
+            <div className="md:col-span-1 md:flex md:justify-end">
+              <nav className="text-right">
                 <div className="flex justify-between items-center">
                   <h1 className="font-bold uppercase p-4 border-b border-gray-100">
                     <a href="/" className=" text-red-800">
@@ -41,16 +45,17 @@ function App() {
                   } md:block`}
                 >
                   <li className="text-slate-700 font-bold py-1">
+                    
                     <a
                       href="#"
-                      className="px-4 flex justify-start border-l-4 border-lime-700"
+                      className="flex px-4 justify-end border-r-4 border-lime-700 text-red-700"
                     >
                       <span>Strona główna</span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         fill="currentColor"
-                        className="w-6 h-6 ml-2"
+                        className="w-6 h-6 ml-2 text-red-700"
                       >
                         <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
                         <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
@@ -60,7 +65,7 @@ function App() {
                   <li className="py-1">
                     <a
                       href="#"
-                      className="px-4 flex justify-start border-l-4 border-lime-600"
+                      className="px-4 flex justify-end border-r-4 border-lime-600 text-red-700"
                     >
                       <span>Coś o nas</span>
                       <svg
@@ -69,7 +74,7 @@ function App() {
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="currentColor"
-                        className="w-6 h-6 ml-2"
+                        className="w-6 h-6 ml-2 text-red-700"
                       >
                         <path
                           strokeLinecap="round"
@@ -82,7 +87,7 @@ function App() {
                   <li className="py-1">
                     <a
                       href="#"
-                      className="px-4 flex justify-start border-l-4 border-lime-600"
+                      className="px-4 flex justify-end border-r-4 border-lime-600 text-red-700"
                     >
                       <span>Kontakt</span>
                       <svg
@@ -91,7 +96,7 @@ function App() {
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="currentColor"
-                        className="w-6 h-6 ml-2"
+                        className="w-6 h-6 ml-2 text-red-700"
                       >
                         <path
                           strokeLinecap="round"
@@ -105,23 +110,23 @@ function App() {
               </nav>
             </div>
           </div>
-          <main className="px-16 py-6 md: col-span-2 bg-slate-200 bg-opacity-60">
+          <main className="px-16 py-6 md: col-span-2 bg-slate-200 bg-opacity-50">
             <div className="flex sm:justify-center md:justify-end">
               <a
                 href="#"
-                className="text-slate-700 button border-slate-700 md:border-2 hover:bg-primary hover:text-slate-50 transition ease-out duration-500 bg-gradient-to-r from-slate-100 to-slate-500 hover:from-pink-500 hover:to-yellow-500"
+                className="text-slate-700 button border-slate-700 md:border-2 hover:bg-primary hover:text-slate-50 transition ease-out duration-500 bg-gradient-to-r hover:from-pink-500 hover:to-yellow-500"
               >
                 Log in
               </a>
               <a
                 href="#"
-                className="text-slate-700 ml-2 button border-slate-700 md:border-2 hover:bg-primary hover:text-slate-50 transition ease-out duration-500 bg-gradient-to-r from-slate-100 to-slate-500 hover:from-pink-500 hover:to-yellow-500"
+                className="text-slate-700 ml-2 button border-slate-700 md:border-2 hover:bg-primary hover:text-slate-50 transition ease-out duration-500 bg-gradient-to-r hover:from-pink-500 hover:to-yellow-500"
               >
                 Sign up
               </a>
             </div>
             <header>
-              <h2 className="text-gray-600 text-5xl font-semibold animate-bounce flex justify-center">
+              <h2 className="text-gray-600 text-5xl font-semibold flex justify-center">
                 Przepisy
               </h2>
               <h3 className="text-3xl font-semibold animate-bounce flex justify-center"></h3>
@@ -134,7 +139,7 @@ function App() {
                 <div className="card hover:shadow-2xl">
                   <img
                     className=" w-full h-32 sm:h-48 object-cover "
-                    src="src/img/pizza.jpg"
+                    src={pizza}
                     alt="pizza"
                   />
                   <div className="m-4">
@@ -165,7 +170,7 @@ function App() {
                 <div className="card hover:shadow-2xl">
                   <img
                     className=" w-full h-32 sm:h-48 object-cover "
-                    src="src/img/rosol.jpg"
+                    src={rosol}
                     alt="rosół"
                   />
                   <div className="m-4">
@@ -196,7 +201,7 @@ function App() {
                 <div className="card hover:shadow-2xl">
                   <img
                     className=" w-full h-32 sm:h-48 object-cover "
-                    src="src/img/schab.jpg"
+                    src={schab}
                     alt="schab"
                   />
                   <div className="m-4">
@@ -226,16 +231,16 @@ function App() {
               </div>
 
               <h4 className="font-bold pb-2 mt-12 border-b border-gray-200">
-                Najlepsze
+                TOP 3
               </h4>
 
-              <div className="mt-8">
+              <div className="mt-8 text-center">
                 <div>Coming soon...</div>
               </div>
             </div>
 
             <div className="mt-12 flex justify-center">
-              <div className="text-slate-600 bg-transparent button border-slate-700 border-2 hover:shadow-inner  transfrom hover:scale-125 hover:bg-opacity-50 hover:text-slate-50 transition ease-out duration-500 bg-gradient-to-r from-slate-300 to-slate-500 hover:from-pink-500 hover:to-yellow-500">
+              <div className="text-slate-600 bg-transparent button border-slate-700 border-2 hover:shadow-inner  transfrom hover:scale-125 hover:bg-opacity-50 hover:text-slate-50 transition ease-out duration-500 bg-gradient-to-r hover:from-pink-500 hover:to-yellow-500">
                 Wiele więcej
               </div>
             </div>
